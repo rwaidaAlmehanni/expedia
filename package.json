@@ -1,0 +1,23 @@
+{
+  "name": "expedia",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rwaida Almehanni",
+  "license": "ISC",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "*",
+    "express": "^4.14.1",
+    "nodemailer": "^3.1.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
+  }
+}
