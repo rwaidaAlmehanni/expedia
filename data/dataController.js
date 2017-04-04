@@ -1,8 +1,12 @@
 var Data = require ('./data.json');
+var obj={}; // object to collect data ...
 module.exports = {
-	
-	getAll : function (req, res, next) {
-        for(var k in Data){
-        	res.json(Data[k])
-        }
-	}}
+	allData : function (req, res, next) {
+          for(var k in Data){ // to loop all the json data ...
+     	      if(obj[k]===undefined){
+     		      obj[k]=Data[k];//collect all data to object ...
+     	           }    
+     	      }
+            res.json(obj); // respond the object ...       
+         }
+}

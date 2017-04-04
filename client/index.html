@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expedia Data</title>
+	<script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+ <script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="myData" >
+	<ul >
+		<li ng-repeat="data in allData" >{{data}}</li>
+	</ul>	
+</div>
+</body>
+</html>
